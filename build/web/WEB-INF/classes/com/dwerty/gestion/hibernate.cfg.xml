@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+                                         
+<hibernate-configuration>
+    
+ <session-factory name="">
+     
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.password"></property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/dwerty</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <mapping class="com.dwerty.beans.User"/>
+    <mapping class="com.dwerty.beans.Logement"/>
+    <mapping class="com.dwerty.beans.Lit"/>
+    <mapping class="com.dwerty.beans.ImageLogement"/>
+    <mapping class="com.dwerty.beans.Chambre"/>
+    <mapping class="com.dwerty.beans.Compose"/>
+    <mapping class="com.dwerty.beans.Proprietaire"/>
+    <mapping class="com.dwerty.beans.Evaluer"/>
+
+ </session-factory>
+ 
+</hibernate-configuration>
